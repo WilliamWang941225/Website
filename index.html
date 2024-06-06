@@ -74,7 +74,7 @@
 										<article>
 											<div class="inner">
 												<h4><a href="document/Stress Tensor and Navier-Stokes Equation in different coordinate systems.pdf" target="_blank">Stress Tensor and Navier-Stokes Equation in different coordinate systems</a></h4>
-												<p>2024.06.05</p>
+												<p>lastedit()</p>
 											</div>
 										</article>
 									</div>
@@ -101,6 +101,11 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				function lastedit (){
+					document.getElementById("document/Stress Tensor and Navier-Stokes Equation in different coordinate systems.pdf").innerHTML = new Date(document.lastModified);
+				}
+			</script>
 
 	</body>
 </html>
