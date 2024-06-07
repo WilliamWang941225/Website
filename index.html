@@ -75,21 +75,7 @@
 										<article>
 											<div class="inner">
 												<h4><a href="document/Stress Tensor and Navier-Stokes Equation in different coordinate systems.pdf" target="_blank">Stress Tensor and Navier-Stokes Equation in different coordinate systems</a></h4>
-												<div id="lastModifiedDate"></div>
-												<script>
-													// Replace 'path/to/your/file.pdf' with the actual path or URL of your PDF file
-													const pdfFilePath = 'document/Stress Tensor and Navier-Stokes Equation in different coordinate systems.pdf';
-
-													pdfjsLib.getDocument(pdfFilePath).promise.then(function(pdf) {
-														pdf.getMetadata().then(function(data) {
-															const modifiedDate = data.modificationDate;
-															const formattedDate = new Date(modifiedDate.substring(2, modifiedDate.length - 2) * 1000);
-															document.getElementById('lastModifiedDate').textContent = 'Last Modified Date: ' + formattedDate.toLocaleString();
-														});
-													}).catch(function(error) {
-														console.error('Error:', error);
-													});
-												</script>
+												<p id="lastModifiedDate"></p>
 											</div>
 										</article>
 									</div>
@@ -115,6 +101,19 @@
 
 		<!-- Scripts -->
 			<script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+			<script>
+				const pdfFilePath = 'document/Stress Tensor and Navier-Stokes Equation in different coordinate systems.pdf';
+			
+				pdfjsLib.getDocument(pdfFilePath).promise.then(function(pdf) {
+					pdf.getMetadata().then(function(data) {
+						const modifiedDate = data.modificationDate;
+						const formattedDate = new Date(modifiedDate.substring(2, modifiedDate.length - 2) * 1000);
+						document.getElementById('lastModifiedDate').textContent = formattedDate.toLocaleString();
+					});
+				}).catch(function(error) {
+					console.error('Error:', error);
+				});
+			</script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
