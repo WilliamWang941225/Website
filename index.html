@@ -75,7 +75,15 @@
 										<article>
 											<div class="inner">
 												<h4><a href="document/Stress Tensor and Navier-Stokes Equation in different coordinate systems.pdf" target="_blank">Stress Tensor and Navier-Stokes Equation in different coordinate systems</a></h4>
-												<p id="lastModifiedDate"></p>
+												<p>2024.06.05</p>
+											</div>
+										</article>
+										<article>
+											<div class="inner">
+												<h4>7th Tian Wu Physics Competition Final Problem 3</a></h4>
+												<p><a href="document/第七屆天物盃決賽 思考賽 Q3.pdf" target="_blank">Problem</a></p>
+												<p><a href="document/第七屆天物盃決賽 思考賽 Q3 解答.pdf" target="_blank">Solution</a></p>
+												<p><a href="https://www.facebook.com/share/p/AW9EGxkNH9CqTBhx/">Here</a> is the original Facebook link.
 											</div>
 										</article>
 									</div>
@@ -100,20 +108,6 @@
 			</div>
 
 		<!-- Scripts -->
-			<script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
-			<script>
-				const pdfFilePath = 'document/Stress Tensor and Navier-Stokes Equation in different coordinate systems.pdf';
-			
-				pdfjsLib.getDocument(pdfFilePath).promise.then(function(pdf) {
-					pdf.getMetadata().then(function(data) {
-						const modifiedDate = data.modificationDate;
-						const formattedDate = new Date(modifiedDate.substring(2, modifiedDate.length - 2) * 1000);
-						document.getElementById('lastModifiedDate').textContent = formattedDate.toLocaleString();
-					});
-				}).catch(function(error) {
-					console.error('Error:', error);
-				});
-			</script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
