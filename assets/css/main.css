@@ -193,6 +193,10 @@ input, select, textarea {
 			margin: 3.375em 0;
 		}
 
+		hr.comp-major {
+			margin: 3.375em 0;
+		}
+
 	blockquote {
 		border-left: solid 8px #e4e4e4;
 		font-style: italic;
@@ -1786,12 +1790,29 @@ input, select, textarea {
 
 	header.major h2 {
 		color: #4381e3;
-		font-size: 3.5em;
+		font-size: 3em;
 	}
 
 		header.major h2 + p {
 			color: #777;
-			font-size: 1.75em;
+			font-size: 1.5em;
+			font-weight: 700;
+			margin-top: -0.75em;
+		}
+
+	header.major h3 {
+		color: #4381e3;
+		font-size: 1.75em;
+	}
+	
+	header.comp-major h2 {
+		color: #4381e3;
+		font-size: 2.5em;
+	}
+
+		header.comp-major h2 + p {
+			color: #777;
+			font-size: 1.5em;
 			font-weight: 700;
 			margin-top: -0.75em;
 		}
@@ -2199,14 +2220,30 @@ input, select, textarea {
 			}
 
 		.image.main {
-			display: block;
-			height: 470px;
-			border-radius: 0;
+			height: auto !important;
+			min-height: 0 !important;
+			background: none !important;
+			overflow: visible !important;
 		}
 
-			.image.main img {
-				border-radius: 0;
-			}
+		.image.main img {
+			display: block !important;
+			position: static !important;
+			width: auto !important;
+			max-width: 100% !important;
+			height: 80vh !important;
+			max-height: 80vh !important;
+			margin: 0 auto !important;
+			object-fit: contain !important;
+			object-position: center center !important;
+		}
+
+		.image.main {
+			height: auto !important;
+			min-height: 0 !important;
+			background: none !important;
+			overflow: visible !important;
+		}
 
 /* List */
 
@@ -3161,6 +3198,14 @@ input, select, textarea {
 
 				header.major h2 + p {
 					font-size: 1.5em;
+				}
+			
+			header.comp-major h2 {
+				font-size: 2em;
+			}
+
+				header.comp-major h2 + p {
+					font-size: 1.2em;
 				}
 
 		/* Features */
