@@ -3,11 +3,13 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
+  "homepage": "https://WilliamWang941225.github.io/Website",
   "scripts": {
     "generate-resources": "node scripts/generateResources.mjs",
     "dev": "npm run generate-resources && vite",
     "build": "npm run generate-resources && tsc -b && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "dependencies": {
     "@vitejs/plugin-react": "latest",
@@ -18,6 +20,8 @@
   },
   "devDependencies": {
     "@types/react": "^19.2.17",
-    "@types/react-dom": "^19.2.3"
+    "@types/react-dom": "^19.2.3",
+    "gh-pages": "^6.3.0"
   }
 }
+
