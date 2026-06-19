@@ -193,10 +193,6 @@ input, select, textarea {
 			margin: 3.375em 0;
 		}
 
-		hr.comp-major {
-			margin: 3.375em 0;
-		}
-
 	blockquote {
 		border-left: solid 8px #e4e4e4;
 		font-style: italic;
@@ -1800,23 +1796,6 @@ input, select, textarea {
 			margin-top: -0.75em;
 		}
 
-	header.major h3 {
-		color: #4381e3;
-		font-size: 1.75em;
-	}
-	
-	header.comp-major h2 {
-		color: #4381e3;
-		font-size: 2.5em;
-	}
-
-		header.comp-major h2 + p {
-			color: #777;
-			font-size: 1.5em;
-			font-weight: 700;
-			margin-top: -0.75em;
-		}
-
 /* Form */
 
 	form {
@@ -3200,14 +3179,6 @@ input, select, textarea {
 					font-size: 1.5em;
 				}
 			
-			header.comp-major h2 {
-				font-size: 2em;
-			}
-
-				header.comp-major h2 + p {
-					font-size: 1.2em;
-				}
-
 		/* Features */
 
 			.features article .image {
