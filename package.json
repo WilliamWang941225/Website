@@ -5,9 +5,9 @@
   "type": "module",
   "homepage": "https://WilliamWang941225.github.io/Website",
   "scripts": {
-    "generate-resources": "node scripts/generateResources.mjs",
-    "dev": "npm run generate-resources && vite",
-    "build": "npm run generate-resources && tsc -b && vite build",
+    "generate-notes": "node scripts/generateNotes.mjs",
+    "dev": "npm run generate-notes && vite",
+    "build": "npm run generate-notes && tsc -b && vite build",
     "preview": "vite preview",
     "deploy": "npm run build && gh-pages -d dist"
   },
@@ -15,6 +15,7 @@
     "@vitejs/plugin-react": "latest",
     "react": "latest",
     "react-dom": "latest",
+    "react-router-dom": "^7.18.0",
     "typescript": "latest",
     "vite": "latest"
   },
@@ -24,4 +25,3 @@
     "gh-pages": "^6.3.0"
   }
 }
-

@@ -1,31 +1,42 @@
+import { NavLink } from "react-router-dom";
+
 export default function Header() {
   return (
     <section id="header">
       <header>
         <span className="image avatar">
-          <img src="/images/avatar.jpg" alt="William Wang avatar" />
+          <img src="images/avatar.jpg" alt="Avatar" />
         </span>
+
         <h1 id="logo">
-          <a href="#">William Wang</a>
+          <NavLink to="/">William Wang</NavLink>
         </h1>
+
         <p>physics enthusiast</p>
       </header>
 
       <nav id="nav">
         <ul>
           <li>
-            <a href="#one" className="active">
-              About
-            </a>
+            <NavLink to="/" end>
+              Home
+            </NavLink>
           </li>
+
           <li>
-            <a href="#two">My Resources</a>
+            <NavLink to="/about">About</NavLink>
           </li>
+
           <li>
-            <a href="#three">Online Resources</a>
+            <NavLink to="/resources">My Resources</NavLink>
           </li>
+
           <li>
-            <a href="#four">Tutor</a>
+            <NavLink to="/online-resources">Online Resources</NavLink>
+          </li>
+
+          <li>
+            <NavLink to="/tutor">Tutor</NavLink>
           </li>
         </ul>
       </nav>
@@ -42,6 +53,7 @@ export default function Header() {
               <span className="label">Github</span>
             </a>
           </li>
+
           <li>
             <a
               href="mailto:WilliamWang941225@gmail.com"

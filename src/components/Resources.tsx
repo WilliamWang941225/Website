@@ -34,11 +34,16 @@ const onlineResourceGroups = [
   }
 ];
 
+import BackHomeButton from "./BackHomeButton";
+
 export default function OnlineResources() {
   return (
     <section id="three">
       <div className="container">
-        <h3>Online Resources</h3>
+        <BackHomeButton />
+        <header className="comp-major">
+          <h2>Resources</h2>
+        </header>
         <div className="features">
           {onlineResourceGroups.map((group) => (
             <article key={group.title}>
