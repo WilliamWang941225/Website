@@ -3,14 +3,14 @@
 
 export const notesBase = [
   {
-    title: "Notes on Fluid Dynamics",
+    title: "Fluid Mechanics",
     description:
-      "About some interesting parts of Fluid Dynamics I thought of.",
-    href: "document/Fluid Dynamics.pdf",
-    dateSourceHref: "document/Fluid Dynamics.pdf",
+      "About some interesting parts of fluid mechanics I thought of.",
+    href: "document/Fluid Mechanics.pdf",
+    dateSourceHref: "document/Fluid Mechanics.pdf",
     fallbackDate: "2024/06/29",
     links: [
-      { label: "Main file", href: "document/Fluid Dynamics.pdf" },
+      { label: "Main file", href: "document/Fluid Mechanics.pdf" },
       { label: "Old version", href: "document/流體力學.pdf" }
     ]
   },
