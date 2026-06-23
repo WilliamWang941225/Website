@@ -16,20 +16,20 @@ export type Note = {
 
 export const notes: Note[] = [
   {
-    "title": "Notes on Fluid Dynamics",
-    "description": "About some interesting parts of Fluid Dynamics I thought of.",
-    "href": "document/Fluid Dynamics.pdf",
+    "title": "Fluid Mechanics",
+    "description": "About some interesting parts of fluid mechanics I thought of.",
+    "href": "document/Fluid Mechanics.pdf",
     "links": [
       {
         "label": "Main file",
-        "href": "document/Fluid Dynamics.pdf"
+        "href": "document/Fluid Mechanics.pdf"
       },
       {
         "label": "Old version",
         "href": "document/流體力學.pdf"
       }
     ],
-    "date": "2025/06/29"
+    "date": "2026/06/23"
   },
   {
     "title": "Notes on Classical Electrodynamics 3rd edition, John David Jackson",
